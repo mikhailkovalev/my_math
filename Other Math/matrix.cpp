@@ -11,6 +11,7 @@ double& Matrix::at(int row, int column)
 }
 const double& Matrix::at(int row, int column) const
 {
+	/*This is an unwanted but committed change*/
     return _a[row * _size + column];
 }
 int Matrix::size() const
