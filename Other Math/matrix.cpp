@@ -7,7 +7,7 @@ Matrix::Matrix(int size)
 }
 double& Matrix::at(int row, int column)
 {
-    return _a[row * _size + column];
+    return _a[column + row * _size];
 }
 const double& Matrix::at(int row, int column) const
 {
